@@ -643,9 +643,15 @@ address {
   flex-basis: calc((100% - var(--indent) * var(--item)) / var(--item));
 
   margin: calc(var(--indent) / 2);
+  position: relative;
 }
 
 /* -----ФІНІШ -СІТКА------ */
+
+.bigbest-text {
+  position: absolute;
+  top: 0;
+}
 
 /* -----СТАРТ ЗМІННІ----- */
 .benefits-list {
