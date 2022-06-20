@@ -87,12 +87,15 @@ address {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+  transition: color var(--anim)
+
 }
 
 .contakt-link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+  transition: color var(--anim)
 }
 
 .header-nav-item {
@@ -248,6 +251,7 @@ address {
 .heder-soc-icon {
   fill: rgba(117, 117, 117, 1);
   margin-right: 10px;
+  
 }
 
 .contakt-link:hover .heder-soc-icon,
@@ -450,6 +454,7 @@ address {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   background-color: #ffffff;
+  transition: color var(--anim), border-color var(--anim);
 
 
   
