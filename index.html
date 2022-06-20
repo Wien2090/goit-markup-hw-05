@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homework №4</title>
+    <title>Homework №5</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -32,7 +32,10 @@
         <nav>
           <ul class="header-nav-link list">
             <li class="header-nav-item">
-              <a href="#" class="nav-link current link">Студия</a>
+              <div class="position-align">
+                <a href="#" class="nav-link current link">Студия</a>
+                <div class="align"></div>
+              </div>
             </li>
             <li class="header-nav-item">
               <a href="./portfolio.html" class="nav-link link">Портфолио</a>
@@ -135,34 +138,40 @@
       <section class="section features">
         <div class="container">
           <h2 class="studio-hb">Чем мы занимаемся</h2>
-          c
           <ul class="features-list card-set list link">
             <li class="card-set-item">
-              <img
-                src="./images/a.jpg"
-                alt="имидж-программист-работает-его-рабочий-офис"
-                width="370"
-                height="294"
-              />
-              <p>Десктопные приложения</p>
+              <div class="box-features-imgtext">
+                <img
+                  src="./images/a.jpg"
+                  alt="имидж-программист-работает-его-рабочий-офис"
+                  width="370"
+                  height="294"
+                />
+                <p class="features-imgtext">Десктопные приложения</p>
+              </div>
+            </li>
+
+            <li class="card-set-item">
+              <div class="box-features-imgtext">
+                <img
+                  src="./images/b.jpg"
+                  alt="дизайнеры-разрабатывают-приложения-смартфоны"
+                  width="370"
+                  height="294"
+                />
+                <p class="features-imgtext">Мобильные приложения</p>
+              </div>
             </li>
             <li class="card-set-item">
-              <img
-                src="./images/b.jpg"
-                alt="дизайнеры-разрабатывают-приложения-смартфоны"
-                width="370"
-                height="294"
-              />
-              <p>Мобильные приложения</p>
-            </li>
-            <li class="card-set-item">
-              <img
-                src="./images/c.jpg"
-                alt="креативный художник-веб-дизайн с графикой выбора рабочего цвета"
-                width="370"
-                height="294"
-              />
-              <p>Дизайнерские решения</p>
+              <div class="box-features-imgtext">
+                <img
+                  src="./images/c.jpg"
+                  alt="креативный художник-веб-дизайн с графикой выбора рабочего цвета"
+                  width="370"
+                  height="294"
+                />
+                <p class="features-imgtext">Дизайнерские решения</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -502,6 +511,16 @@
       </div>
       <!-- КІНЕЦЬ СОЦСЕТИ -->
     </footer>
+    <!-- МОДАЛЬНЕ ВИКНО -->
+    <div class="backdrop">
+      <div class="modal">
+        <button type="button" class="modal-btn">
+          <svg class="modal-icon" width="30" height="30">
+            <use xlink:href="./images/icons.svg#icon-linkedin"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
     <script src="./modal.js"></script>
   </body>
 </html>
