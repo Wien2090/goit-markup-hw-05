@@ -5,6 +5,7 @@
   --color-text: rgba(117, 117, 117, 1);
   --color-minitext: rgba(255, 255, 255, 1);
   --color-mix: rgba(245, 244, 250, 1);
+  --anim: 250ms ease-in;
 }
 
 /* ------------ШІНІШ--ЗМІННІ-------------------- */
@@ -396,6 +397,7 @@ address {
   height: 100%;
   border-radius: 50%;
   background-color: #ffffff;
+  transition: color var(--anim), background-color var(--anim)
 }
 
 .soc-icon {
@@ -448,6 +450,9 @@ address {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   background-color: #ffffff;
+
+
+  
 }
 
 .partnters-icon {
@@ -607,6 +612,9 @@ address {
   height: 100%;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+  transition: color var(--anim), background-color var(--anim)
+ 
+
 }
 
 .footer-soc-icon {
@@ -667,8 +675,7 @@ address {
   width: 100%;
   height: 100%;
   transform: translateY(100%);
-  transition: transform 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform var(--anim);
 }
 
 .card-set-item:hover .bigbest-text {
@@ -748,17 +755,9 @@ address {
   align-items: center;
 }
 
-.position-align {
-  position: relative;
-}
-.align {
-  position: absolute;
-  width: 100%;
-  height: 4px;
-  background: #2196f3;
-  border-radius: 2px;
-  margin-top: -3px;
-}
+
+  
+
 
 /* МОДАЛЬНОЕ ОКНО */
 
@@ -769,12 +768,22 @@ address {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity 400ms linear, visibility 400ms linear;
+}
+
+.backdrop.is-hidden {opacity: 0; visibility: hidden; pointer-events: none; }
+
+.backdrop.is-hidden .modal {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.4) rotate(180deg);
 }
 
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
+  
   transform: translate(-50%, -50%);
   width: 528px;
   height: 581px;
@@ -782,4 +791,32 @@ address {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  transition: transform 400ms ease-in-out 400ms;
+}
+
+.modal-btn {position: absolute;
+   top: 8px; right: 8px;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 30px;
+   height: 30px;
+   
+   background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1); 
+  border-radius: 50%; cursor: pointer;
+}
+
+.header-nav-link .nav-link.current::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #2196f3;
+  border-radius: 2px;
 }

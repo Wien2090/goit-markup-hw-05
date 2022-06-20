@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homework №5</title>
+    <title>Homework №5.2</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -32,10 +32,9 @@
         <nav>
           <ul class="header-nav-link list">
             <li class="header-nav-item">
-              <div class="position-align">
+      
                 <a href="#" class="nav-link current link">Студия</a>
-                <div class="align"></div>
-              </div>
+                
             </li>
             <li class="header-nav-item">
               <a href="./portfolio.html" class="nav-link link">Портфолио</a>
@@ -75,7 +74,7 @@
       <section class="background-img hero">
         <div class="container">
           <h1 class="studio-ha">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="studio-button">Заказать услугу</button>
+          <button type="button" class="studio-button"data-modal-open>Заказать услугу</button>
         </div>
       </section>
 
@@ -512,11 +511,11 @@
       <!-- КІНЕЦЬ СОЦСЕТИ -->
     </footer>
     <!-- МОДАЛЬНЕ ВИКНО -->
-    <div class="backdrop">
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="modal-btn">
-          <svg class="modal-icon" width="30" height="30">
-            <use xlink:href="./images/icons.svg#icon-linkedin"></use>
+        <button type="button" class="modal-btn" data-modal-close>
+          <svg class="modal-icon" width="18" height="18">
+            <use xlink:href="./images/icons.svg#icon-close-black"></use>
           </svg>
         </button>
       </div>
