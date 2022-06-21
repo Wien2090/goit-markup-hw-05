@@ -207,6 +207,7 @@ address {
 }
 
 .header-nav-link .nav-link {
+  position: relative;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.15;
@@ -813,7 +814,7 @@ address {
   border-radius: 50%; cursor: pointer;
 }
 
-.header-nav-link .nav-link.current::after {
+.nav-link.current::after {
   content: '';
   position: absolute;
   bottom: -1px;
