@@ -87,15 +87,13 @@ address {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-  transition: color var(--anim)
-
+  transition: color var(--anim);
 }
 
 .contakt-link {
-  
   padding-top: 32px;
   padding-bottom: 32px;
-  transition: color var(--anim)
+  transition: color var(--anim);
   color: var(--color-text);
   font-weight: 500;
   font-size: 14px;
@@ -167,8 +165,7 @@ address {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
-
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ------СТАРТ ФУТЕР------ */
@@ -216,6 +213,7 @@ address {
 }
 
 .header-nav-link .nav-link {
+  font-family: "Roboto";
   position: relative;
   font-weight: 500;
   font-size: 14px;
@@ -227,19 +225,15 @@ address {
 .header-nav-link .nav-link:hover,
 .button-link-portfolio .link-portfolio:focus {
   color: var(--color-buton);
- 
 }
 
 .nav-link.current {
   color: var(--color-buton);
 }
 
-
-
 .heder-contakt-link .contakt-link:hover,
 .heder-contakt-link .contakt-link :focus {
   color: var(--color-buton);
- 
 }
 
 /* -----------SVG В ХЕДЕРЕ-------- */
@@ -248,7 +242,6 @@ address {
   fill: rgba(117, 117, 117, 1);
   margin-right: 10px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
 }
 
 .contakt-link:hover .heder-soc-icon,
@@ -259,12 +252,13 @@ address {
 /* --------------Кінець SVG В ХЕДЕРЕ-------- */
 
 .footer-contakt-link .contakt-links {
+  font-family: "Roboto";
   color: var(--color-text);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.15;
   letter-spacing: 0.02em;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-contakt-link .contakt-links:hover,
@@ -400,7 +394,7 @@ address {
   height: 100%;
   border-radius: 50%;
   background-color: #ffffff;
-  transition: background-color var(--anim)
+  transition: background-color var(--anim);
 }
 
 .soc-icon {
@@ -411,7 +405,6 @@ address {
 .soc-link:hover,
 .soc-link:focus {
   background-color: #2196f3;
-  
 }
 
 .soc-link:hover .soc-icon,
@@ -454,15 +447,11 @@ address {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   background-color: #ffffff;
-  
-
-
-  
 }
 
 .partnters-icon {
   fill: #afb1b8;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .partnters-link:hover,
@@ -490,7 +479,7 @@ address {
 
 .button-link-portfolio .link-portfolio {
   font-family: inherit;
-  
+
   color: rgba(33, 33, 33, 1);
   background-color: var(--color-mix);
   font-weight: 500;
@@ -499,7 +488,7 @@ address {
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
-  transition: color 250ms , background-color 250ms ;
+  transition: color 250ms, background-color 250ms;
 }
 
 .link-portfolio.current {
@@ -619,9 +608,7 @@ address {
   height: 100%;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
-  transition: background-color var(--anim)
- 
-
+  transition: background-color var(--anim);
 }
 
 .footer-soc-icon {
@@ -726,7 +713,9 @@ address {
 }
 
 /* -----Фініш-картинки SVG чем займаємс------ */
-.minibord {transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) ;}
+.minibord {
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .minibord:hover,
 .minibord:focus {
@@ -748,7 +737,6 @@ address {
   width: 370px;
   height: 70px;
   background: rgba(47, 48, 58, 0.8);
- 
 
   font-weight: 700;
   font-size: 14px;
@@ -759,12 +747,7 @@ address {
   color: #ffffff;
   padding-top: 27px;
   padding-bottom: 27px;
- 
 }
-
-
-  
-
 
 /* МОДАЛЬНОЕ ОКНО */
 
@@ -779,7 +762,11 @@ address {
   transition: opacity 400ms linear, visibility 400ms linear;
 }
 
-.backdrop.is-hidden {opacity: 0; visibility: hidden; pointer-events: none; }
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
 
 .backdrop.is-hidden .modal {
   opacity: 0;
@@ -790,7 +777,7 @@ address {
   position: absolute;
   top: 50%;
   left: 50%;
-  
+
   transform: translate(-50%, -50%);
   width: 528px;
   height: 581px;
@@ -801,22 +788,25 @@ address {
   transition: transform 400ms ease-in-out 400ms;
 }
 
-.modal-btn {position: absolute;
-   top: 8px; right: 8px;
+.modal-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
 
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   width: 30px;
-   height: 30px;
-   
-   background: #FFFFFF;
-  border: 1px solid rgba(0, 0, 0, 0.1); 
-  border-radius: 50%; cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 .nav-link.current::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -1px;
   left: 0;
